@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "imput-container/{name}",
+      "connection": "BlobStorage"
+    },
+    {
+      "name": "outputBlob",
+      "path": "output-blob/{name}",
+      "direction": "out",
+      "type": "blob",
+      "connection": "BlobStorage"
+    }
+
+  ]
+}
